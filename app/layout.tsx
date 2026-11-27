@@ -4,7 +4,6 @@ import "./globals.css";
 import { Navbar } from "@/app/components/Navbar";
 import { Footer } from "@/app/components/Footer";
 import { SmoothScrollShell } from "@/app/components/SmoothScrollShell";
-
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -12,11 +11,14 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://openshelf-three.vercel.app"),
   title: "OpenShelf — Discover more. Pay nothing.",
   description:
     "A centralised index for legally free books and textbooks from trusted libraries, universities, and open-access publishers.",
+  verification: {
+    google: "xL6mnIswOtsQ3r4xq6N6HglXMvf9bVczmANABcBLMLk",
+  },
 };
-
 export default function RootLayout({
   children,
 }: {
